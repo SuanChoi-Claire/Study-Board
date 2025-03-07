@@ -17,7 +17,7 @@ public class SecurityConfig {
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
-            		// 경로에 대한 전체 허용
+            		// 주석 테스트용
                 .requestMatchers(new AntPathRequestMatcher("/**")).permitAll())
             .csrf((csrf)-> csrf.ignoringRequestMatchers(new AntPathRequestMatcher("/h2-console/**")))
             
