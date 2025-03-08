@@ -1,37 +1,104 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Java 및 관련 파일
+*.class
+*.jar
+*.war
+*.ear
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# 로그 및 임시 파일
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# IDE 및 편집기 관련 파일
+.idea/
 .vscode/
+*.iml
+.metadata/
+.classpath
+.project
+.settings/
+.springBeans
+.plugin/
+
+# 빌드 및 패키징 디렉토리
+/bin/
+/build/
+/target/
+/out/
+/dist/
+/lib/
+/generated/
+
+# Maven 관련 파일
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle 관련 파일
+.gradle/
+/build/
+gradle-app.setting
+
+# 환경 설정 파일
+.env
+*.env
+
+# 가상 환경 및 라이브러리 디렉토리
+venv/
+env/
+node_modules/
+
+# 운영체제별 파일
+.DS_Store
+Thumbs.db
+
+# Windows 관련 파일
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux 관련 파일
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# Docker 데이터 디렉토리
+docker/postgre/postgres-docker-example/postgres_data/
+docker/mysql/mysql-docker-example/mysql_data/
+
+# 데이터베이스 관련 파일
+*.sqlite3
+*.db
+
+# Jupyter 노트북 체크포인트
+.ipynb_checkpoints/
+
+# Python 테스트 및 커버리지 리포트
+__pycache__/
+.coverage
+nosetests.xml
+pytest.xml
+*.cover
+
+# Java 테스트 및 커버리지 리포트
+/test-output/
+/jacoco.exec
+/jacoco-report/
+coverage.xml
+
+# 추가적인 Java 관련 파일
+lombok.config  # Lombok 설정 파일
+*.ipr  # IntelliJ 프로젝트 파일
+*.iws  # IntelliJ 워크스페이스 파일
+
+# Spring Boot 관련 파일
+*.pid  # 프로세스 ID 파일
+*.hprof  # 힙 덤프 파일
+
+# 설정 파일 제외
+*.properties
+
+# 바이너리 파일 제외
+*.bin
+*.idx
